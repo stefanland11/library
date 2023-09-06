@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="book-table">
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read</th>
+        </tr>
+    </table>
+    <button class="add-book">Add Book</button>
+    <dialog id="show-form">
+        <form method="dialog" id="form">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" id="title">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" id="author">
+            </div>
+            <div>
+                <label for="pages">Pages</label>
+                <input type="number" id="pages">
+            </div>
+            <div>
+                <p>Read?</p>
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="read-radio" value="Yes">
+                <label for="no">No</label>
+                <input type="radio" id="no" name="read-radio" value="No">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </dialog>
+    
+    <script src="script.js"></script>
+</body>
+</html>
